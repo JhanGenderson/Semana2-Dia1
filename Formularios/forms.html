@@ -21,6 +21,10 @@
                 type="text"
                 placeholder="Ej. Juan Eduardo"
                 id="nombres"
+                required
+                minlength="3"
+                maxlength="9"
+                pattern="[A-Z a-z]{1,20}"
                 >
                 <br>
                 <label for="apellidos">
@@ -39,6 +43,7 @@
                 type="email"
                 placeholder="Ingresa tu correo"
                 id="correo"
+                
                 >
                 <br>
                 <label for="clave">
@@ -57,6 +62,7 @@
                 type="number"
                 placeholder="Ingresa tu edad"
                 id="años" 
+                min="0" max="120"
                 >
                 <br>
                 <label>
@@ -68,7 +74,7 @@
                 <br>
                 <input 
                 type="checkbox" value="viajes">Viajar
-                
+
                 <br>
                 <input 
                 type="checkbox" value="bailes"
