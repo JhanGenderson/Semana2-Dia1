@@ -1,0 +1,63 @@
+/* etiqueta clase #id */
+article, h1{
+    background-color: steelblue;
+}
+
+/* al indicar > solamente utilizo los primeros hijos LI dentro de OL */
+ol > li{
+    font-family: Arial;
+    color: red;
+}
+
+/* clases, etiquetas, id  */
+ol > ul > li{
+font-family: Verdana;
+color: orange;
+}
+
+.seccion1 > h2{
+    color: teal;
+}
+
+#caja > span{
+    background-color: yellow;
+}
+
+h2{
+    /* important se usa en caso de mucha necesidad */
+    color: tomato;
+}
+
+h2 .adicional{
+    background-color: skyblue;
+}
+
+.adicional{
+    font-family: impact;
+}
+
+p[name="instrucciones"]{
+    font-style: italic;
+    color: green;
+}
+
+input[placeholder]{
+    background-color: yellow;
+}
+input:placeholder-shown{
+    color: green;
+}
+/* clase para tablas */
+table, th, td{
+    border: 1px solid black;
+
+/* remover espacios entre celdas */
+border-collapse: collapse;
+/* centrar horizontal */
+margin:0 auto;
+}
+
+tr:nth-child(3), :nth-child(4){
+    background-color: palegreen;
+}
+/* pseudoelementos */

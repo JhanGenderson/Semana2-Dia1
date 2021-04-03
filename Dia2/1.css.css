@@ -1,0 +1,12 @@
+h1{
+    font-weight: bolder;
+    padding:20px;
+}
+.azul{
+    background-color: blue;
+    color: white;
+}
+#footer1{
+    background-color:purple;
+    color: white;
+}
