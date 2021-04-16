@@ -170,4 +170,53 @@ color: var(--color-primario);
 .lugar > h4{
     font-size: 16px;
 }
+/* Estilo CSS tarjeta 1 */
+.tarjeta1{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagen1{
+    width: 1300px;
+    min-height: 280px;
+
+}
+
+.imagen1 > img{
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.tio{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 120px;
+    padding: 10px;
+}
+
+.tio > h3{
+    width: 100%;
+    font-size: 35px;
+}
+
+#parrafo1{
+    color: gray;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+#pulsador{
+    width: 40%;
+    height: 40px;
+    margin-top: 40px;
+    background-color: var(--color-primario);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
 
