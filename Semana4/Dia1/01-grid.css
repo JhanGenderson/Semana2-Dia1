@@ -1,0 +1,22 @@
+*{
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    border: 1px solid red;
+    display: grid;
+    /* Definir plantilla */
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+}
+
+.item{
+    border: 1px solid blue;
+}
+
+.item:nth-of-type(1){
+    grid-column: 1/4;
+    grid-row: 2/4;
+}
