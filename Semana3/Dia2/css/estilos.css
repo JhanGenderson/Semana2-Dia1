@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
 }
 
 /* agregando fuente local */
@@ -136,4 +136,37 @@ border-radius: 6px;
 font-family: 'Open Sans', sans-serif;
 font-weight: bold;
 color: var(--color-primario);
+}
+
+.fotos{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.foto1{
+    width: 22%;
+    min-height: 280px;
+    position: relative;
+}
+
+.foto1 > img{
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.lugar{
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    width: 70%;
+    padding: 5px;
+    font-family: 'Open Sans',sans-serif;
+    border-radius: 0px 6px 0px 0px;
+}
+
+.lugar > h4{
+    font-size: 16px;
 }
