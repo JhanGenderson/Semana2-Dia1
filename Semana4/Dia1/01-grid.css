@@ -10,13 +10,27 @@
     /* Definir plantilla */
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 200px 200px 200px;
+    gap: 20px;
+    
+    /* grid implicito */
+
+    grid-auto-rows: 300px;
+    grid-auto-columns: 300px;
 }
+
+
 
 .item{
     border: 1px solid blue;
 }
 
 .item:nth-of-type(1){
-    grid-column: 1/4;
-    grid-row: 2/4;
+    /* grid-column: 1/4; */
+    /* grid-row: 2/4; */
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
