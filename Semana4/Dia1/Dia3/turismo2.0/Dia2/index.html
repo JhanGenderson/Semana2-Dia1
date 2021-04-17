@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/estilos.css" />
   </head>
   <body>
@@ -16,7 +17,11 @@
       <!-- Barra de Navegacion -->
       <nav>
         <img src="./assets/img/logo.png" alt="logo" />
-        <ul>
+        <input type="checkbox" id="check">
+        <label for="check" class="show-menu">
+           <i class="fas fa-bars"></i>
+        </label>
+        <ul class="options">
           <li><a href="">Item 1</a></li>
           <li><a href="">Item 2</a></li>
           <li><a href="">Item 3</a></li>
@@ -26,6 +31,12 @@
           </li>
           <li>
             <button id="btn-register">Register</button>
+          </li>
+          <li>
+            <label for="check" class="hide-menu">
+              <i class="fas fa-times"></i>
+            </label>
+            
           </li>
         </ul>
       </nav>
