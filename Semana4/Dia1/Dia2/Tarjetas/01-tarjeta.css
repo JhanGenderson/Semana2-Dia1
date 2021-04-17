@@ -85,3 +85,36 @@
     opacity:0;
   }
 
+  /* Aqui va la magia */
+  /* cuando ponga el mouse encima de card, modificare la parte superior */
+  .card:hover .card-imagen{
+      height: 40%;
+  }
+
+  /* cuando ponga el mouse encima de card, modificare el img que esta como primer hijo de card-imagen */
+.card:hover .card-imagen > img{
+/* brigthness me permite modificar el brillo de una imagen con un valor de 0 a 1 */
+    filter: brightness(0.5);
+}
+
+.card:hover .card-info{
+    height: 60%;
+} 
+
+.card:hover .card_descripcion{
+    visibility: visible;
+    opacity: 1;
+}
+
+.card:hover{
+    /* box-shadow: desplazamientoX, desplazamientoY, difuminado y color */
+    box-shadow: 0 0 20px black;
+    transform:scale(1.05);
+}
+  
+  /* Y LA CEREZA */
+  /* 1. Selecciono card y
+  2. selecciono todos los elementos que esten dentro de card */
+  .card, .card *{
+    transition: all 0.2s ease;
+  }
